@@ -174,7 +174,8 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('page.html', 'Page'),
-    ('feature.html', 'Page with Feature')
+    ('feature.html', 'Page with Feature'),
+    ('bootstrap.html', 'Bootstrap OnePager')
 )
 
 CMS_PERMISSION = True
