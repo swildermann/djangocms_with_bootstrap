@@ -3,20 +3,67 @@
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
-            {% block content %}
-                <div id="#portfolio"/>
-                    {% placeholder 'portfolio' %}
+            <!-- About part1 -->
+            {% block about_part1 %}
+                <div class="timeline-image">
+                    <img class="img-circle img-responsive" src="../../media/about/Steffi.png" >
                 </div>
-            {% endblock content %}
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="subheading">{% placeholder 'heading1' %}</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">{% placeholder 'text1' %} </p>
+                    </div>
+                </div>
+            {% endblock about_part1 %}
 
-            {% block about %}
-                <div id="#about"/>
-                    {% placeholder 'about' %}
+            <!-- About part1 -->
+            {% block about_part2 %}
+                <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="../../media/about/newspaper.png" alt="Radio">
                 </div>
-            {% endblock about %}
-            {% block contact %}
-                <div id="#contact"/>
-                    {% placeholder 'contact' %}
-                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="subheading">{% placeholder 'heading2' %}</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">{% placeholder 'text2' %} </p>
 
-            {% endblock contact %}
+                    </div>
+                </div>
+            {% endblock about_part2 %}
+
+
+            {% block about_part3 %}
+                <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="../../media/about/radio.png" alt="Radio">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="subheading">{% placeholder 'heading3' %}</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">{% placeholder 'text3' %}</p>
+                    </div>
+                </div>
+            {% endblock about_part3 %}
+
+            {% block about_part4 %}
+
+                <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="../../media/about/studium.png" alt="Studium">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="subheading">{% placeholder 'heading4' %}</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted">{% placeholder 'text4' %}</p>
+                    </div>
+                </div>
+            {% endblock about_part4 %}
+
+
+
+
