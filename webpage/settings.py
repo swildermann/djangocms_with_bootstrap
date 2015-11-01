@@ -69,7 +69,7 @@ MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
 STATIC_ROOT = os.path.join(DATA_DIR, 'static')
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'webpage', 'static'),
+    os.path.join(BASE_DIR, 'webpage', 'templates/static'),
 )
 SITE_ID = 1
 
@@ -88,9 +88,10 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.media',
     'django.core.context_processors.csrf',
     'django.core.context_processors.tz',
-    'sekizai.context_processors.sekizai',
     'django.core.context_processors.static',
+    'sekizai.context_processors.sekizai',
     'cms.context_processors.cms_settings'
+
 )
 
 TEMPLATE_DIRS = (
