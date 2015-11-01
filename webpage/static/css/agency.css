@@ -266,7 +266,7 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #000000;
-    background: url(../../media/header-test.jpg);
+    background: url(../../../media/header-test.jpg);
     background-position: right top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
