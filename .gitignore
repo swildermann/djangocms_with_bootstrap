@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
+=======
+>>>>>>> fbb287782eb06cbdc43bde238f9b7b17cbf4dc09
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -15,6 +18,10 @@ develop-eggs/
 dist/
 downloads/
 eggs/
+<<<<<<< HEAD
+=======
+.eggs/
+>>>>>>> fbb287782eb06cbdc43bde238f9b7b17cbf4dc09
 lib/
 lib64/
 parts/
@@ -38,9 +45,17 @@ pip-delete-this-directory.txt
 htmlcov/
 .tox/
 .coverage
+<<<<<<< HEAD
 .cache
 nosetests.xml
 coverage.xml
+=======
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+>>>>>>> fbb287782eb06cbdc43bde238f9b7b17cbf4dc09
 
 # Translations
 *.mo
@@ -54,5 +69,8 @@ docs/_build/
 
 # PyBuilder
 target/
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> fbb287782eb06cbdc43bde238f9b7b17cbf4dc09
