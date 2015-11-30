@@ -77,13 +77,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#rabbinerin" class="portfolio-link" data-toggle="modal">
+                    <a href="#article1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="../../media/portfolio/rabbinerin_400x650.png" class="img-responsive" alt="Rabbinerin">
+                        {% placeholder 'teaser_image1' %}
                     </a>
                     <div class="portfolio-caption">
                         <h4>{% placeholder 'teaser_header_text1' %}</h4>
@@ -879,7 +879,7 @@
 
 
     <!-- Portfolio Modal Article1 -->
-    <div class="portfolio-modal modal fade" id="rabbinerin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="article1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -893,8 +893,8 @@
                         <div class="modal-body">
                             {% block article1 %}
                             <!-- Project Details Go Here -->
-                            <h2>Köln-Gespräch mit NRWs erster Rabbinerin Natalia Verzhbovska (47)</h2>
-                            <p class="item-intro text-muted">„Unser Karneval heißt Purim“</p>
+                            <h2>{% placeholder 'article1_heading' %}</h2>
+                            {% placeholder 'article1_subheading' %}
                             {% placeholder 'article1_image' %}
 
 
