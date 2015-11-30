@@ -184,7 +184,32 @@ CMS_TEMPLATES = (
 
 CMS_PERMISSION = True
 
-CMS_PLACEHOLDER_CONF = {}
+CMS_PLACEHOLDER_CONF = {
+    'heading1': {
+        'plugins': ['TextPlugin'],
+        },
+    'heading2': {
+        'plugins': ['TextPlugin'],
+        },
+    'heading3': {
+        'plugins': ['TextPlugin'],
+        },
+    'heading4': {
+        'plugins': ['TextPlugin'],
+        },
+    'text1': {
+        'plugins': ['TextPlugin'],
+        },
+    'text2': {
+        'plugins': ['TextPlugin'],
+        },
+    'text3': {
+        'plugins': ['TextPlugin'],
+        },
+    'text4': {
+        'plugins': ['TextPlugin'],
+        },
+}
 
 DATABASES = {
     'default': {
