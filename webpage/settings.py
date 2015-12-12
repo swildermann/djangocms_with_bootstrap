@@ -68,6 +68,13 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
 STATIC_ROOT = os.path.join(DATA_DIR, 'static')
 
+from imp import find_module
+STATICFILES_DIRS = (
+    ('', os.path.join(os.path.abspath(find_module("cms")[1]), 'media')),
+)
+
+
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'webpage', 'static' ),
 )
