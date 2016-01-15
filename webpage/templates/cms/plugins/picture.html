@@ -6,9 +6,14 @@ solution found at http://stackoverflow.com/questions/28802742/django-cms-picture
 {% endcomment %}
 
 
-<span class="plugin_picture{% if picture.float %} align-{{ picture.float }}{% endif %}">
+
 {% if link %}<a href="{{ link }}">{% endif %}
-<img src="{{ picture.image.url }}" alt="{{ picture.alt }}"{% if picture.longdesc %} title="{{ picture.longdesc }}"{% endif %} class="img-responsive" />
+<img src="{{ picture.image.url }}" alt="{{ picture.alt }}"{% if picture.longdesc %} title="{{ picture.longdesc }}"{% endif %}
+     {% if picture.float %} class="img-responsive img-centered" {% else %} class="img-responsive" {% endif %} />
 {% if link %}</a>{% endif %}
-</span>
+
+
+
+
+
 
