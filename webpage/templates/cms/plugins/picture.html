@@ -1,0 +1,14 @@
+{% comment %}
+overrides the template from "djangocms_picture" plugin to insert the
+"img-responsive" class and always get responsive images :-)
+
+solution found at http://stackoverflow.com/questions/28802742/django-cms-picture-resize/28804850#28804850
+{% endcomment %}
+
+
+<span class="plugin_picture{% if picture.float %} align-{{ picture.float }}{% endif %}">
+{% if link %}<a href="{{ link }}">{% endif %}
+<img src="{{ picture.image.url }}" alt="{{ picture.alt }}"{% if picture.longdesc %} title="{{ picture.longdesc }}"{% endif %} class="img-responsive" />
+{% if link %}</a>{% endif %}
+</span>
+
